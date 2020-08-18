@@ -28,12 +28,12 @@
 	cursor: pointer;
 	position: fixed;
 	right: 30px;
-	bottom: 80px;
+	bottom: 90px;
 }
 
 .sortButton {
 	cursor: pointer;
 	position: fixed;
 	right: 30px;
-	bottom: 40px;
+	bottom: 30px;
 }

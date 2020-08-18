@@ -56,10 +56,10 @@ class App extends Component {
 				) : null}
 
 				<div className="addButton" onClick={() => this.addContactHandler(true)}>
-					<i className="fas fa-plus-circle"></i>
+					<i className="fas fa-plus-circle fa-3x"></i>
 				</div>
 				<div className="sortButton" onClick={this.sortHandler}>
-					<i className="fas fa-sort-alpha-up"></i>
+					<i className="fas fa-sort-alpha-up fa-3x"></i>
 				</div>
 			</div>
 		);
