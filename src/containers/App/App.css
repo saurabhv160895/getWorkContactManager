@@ -21,7 +21,7 @@
 }
 
 .contactList {
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
 .addButton {
@@ -38,4 +38,8 @@
 	right: 30px;
 	bottom: 30px;
 	color: #4267b2;
+}
+
+.input {
+	margin-top: 100px;
 }

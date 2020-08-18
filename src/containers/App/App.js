@@ -8,6 +8,13 @@ class App extends Component {
 	state = {
 		isAddingContact: false,
 		isSorted: false,
+		searchString: "",
+	};
+
+	searchHandler = (event) => {
+		this.setState({
+			searchString: event.target.value,
+		});
 	};
 
 	addContactHandler = (flag) => {
@@ -28,9 +35,19 @@ class App extends Component {
 
 	render() {
 		//.log("App.js", this.state);
+		let renderContacts;
 		let keys = Object.keys(this.props.contactList);
+		if (this.state.searchString.length) {
+			//console.log(keys);
+			keys = keys.filter((el) => {
+				if (el.match(this.state.searchString)) {
+					return el;
+				}
+			});
+			//console.log(keys);
+		}
 		if (this.state.isSorted) keys.sort();
-		const renderContacts = keys.map((el, index) => {
+		renderContacts = keys.map((el, index) => {
 			return (
 				<div className="contact" key={index}>
 					<Contact name={el} contactNumber={this.props.contactList[el]} />
@@ -44,6 +61,14 @@ class App extends Component {
 			<div className="App">
 				<div className="header">
 					<p>Contacts</p>
+				</div>
+				<div className="input">
+					<label>Search</label>
+					<br />
+					<input
+						onChange={this.searchHandler}
+						value={this.state.searchString}
+					></input>
 				</div>
 
 				<div className="contactList">{renderContacts}</div>
