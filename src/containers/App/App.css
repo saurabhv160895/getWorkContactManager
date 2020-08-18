@@ -1,0 +1,39 @@
+.App {
+	text-align: center;
+	margin: 0;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	top: 0;
+	background-color: #4267b2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: fixed;
+}
+.header p {
+	margin: 0;
+	font-weight: 500;
+	font-size: 27px;
+	color: #fff;
+}
+
+.contactList {
+	margin-top: 80px;
+}
+
+.addButton {
+	cursor: pointer;
+	position: fixed;
+	right: 30px;
+	bottom: 80px;
+}
+
+.sortButton {
+	cursor: pointer;
+	position: fixed;
+	right: 30px;
+	bottom: 40px;
+}
