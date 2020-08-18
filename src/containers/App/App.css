@@ -29,6 +29,7 @@
 	position: fixed;
 	right: 30px;
 	bottom: 90px;
+	color: #4267b2;
 }
 
 .sortButton {
@@ -36,4 +37,5 @@
 	position: fixed;
 	right: 30px;
 	bottom: 30px;
+	color: #4267b2;
 }
